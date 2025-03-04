@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cours.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+<body>
+   <div class="navbar">
+    <div class="titre">
+        <h1>cours de programmation</h1>
+    </div>
+    <ul>
+        <li><a href="acceuil.html">acceuil</a></li>
+        <li><a href="">prestation</a></li>
+        <li><a href="">evenement</a></li>
+        <li><a href="">connexion</a></li>
+    </ul>
+   </div>
+   <section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide"><video src="FLOW「DAYS」LIVE at FLOW 20th ANNIVERSARY SPECIAL LIVE 2023 〜アニメ縛りフェスティバル〜.mp4" autoplay loop muted></video></li>
+              <li class="splide__slide"><video src="Cyberpunk- Edgerunners - Official NSFW Trailer - Netflix.mp4"    autoplay loop muted></video></li>
+              <li class="splide__slide"><video src="「Creditless」Frieren- Beyond Journey's End OP - Opening 1「UHD 60FPS」.mp4" autoplay loop muted></video></li>
+      </div>
+
+    </div>
+    
+  </section>
+
+  <div id="custom-pagination"></div>
+
+   <div class="description">
+    <div class="descript">
+        <h1>html</h1>
+        <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis repellat itaque dolores ab laudantium consequatur voluptates. Delectus eius, ut id nulla sequi dolores vel exercitationem quaerat voluptatum beatae accusantium.</p1>
+    </div>
+    <div class="descript">
+        <h1>cybersecurite</h1>
+        <p1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam provident ut vel, voluptate reprehenderit molestiae quaerat earum laudantium optio dolores neque recusandae praesentium harum, totam, voluptatum cumque repellat iusto nemo!</p1>
+    </div>
+    <div class="descript">
+        <h1>javascript</h1>
+        <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repudiandae officia adipisci provident sapiente tempore? Dolore numquam consequatur quis! Animi delectus natus similique ex laudantium excepturi sapiente ullam voluptatem eum?</p1>
+    </div>
+    <div class="descript">
+        <h1>IDE</h1>
+        <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, harum pariatur. Illo debitis ad velit doloremque, ipsum exercitationem deleniti, expedita nobis quae rerum quasi nulla soluta dolorum officiis non at?</p1>
+    </div>
+    <div class="descript">
+        <h1>reseau</h1>
+        <p1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi asperiores dolorum debitis repudiandae consequuntur velit quam maxime voluptatibus repellendus, dolores at tenetur. In recusandae ipsam quis fuga quos labore quaerat.</p1>
+    </div>
+    <div class="descript">
+        <p1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi asperiores dolorum debitis repudiandae consequuntur velit quam maxime voluptatibus repellendus, dolores at tenetur. In recusandae ipsam quis fuga quos labore quaerat.</p1>
+        <div class="ELEMENT">
+            <h1>godot</h1>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="mailto:japhetikoume@gmail.com">japhetikoume@gmail.com</a></li>
+        </ul>
+    </div>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>  
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('.splide', {
+      width:'100%',
+      height: '70vh',
+      start:1,
+      perPage: 1,
+      snap: true,
+      type:"loop",
+      autoplay:true,
+      interval:2500,
+      gap:'0px',
+      arrows:true,
+      rewind: true,
+      heightRatio : 0.3,
+      pagination:true,
+      breakpoints: {
+        500: {
+          perPage:1,
+          snap:false,
+          arrows:true
+        }
+      }
+    });
+
+    splide.mount();
+});
+</script>
+  </script>
+</body>
+</html>

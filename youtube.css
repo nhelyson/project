@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Black.ttf') format('true type');
+}
+
+
+ div.container{
+   
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    
+    
+    
+ }
+
+ div.container-item1{
+    position: relative;
+    left: 20px;
+    height: 2800px;
+    width: 1100px;
+    
+ }
+
+
+ div.container-item2{
+   position: relative;
+   right:85px;
+    height: 2800px;
+    width: 500px;
+ }
+
+ div.container-video{
+   
+    width: 1000px;
+    position: relative;
+    top:130px;
+    left:30px;
+   
+    
+    
+ }
+
+ div.container-video video{
+    position: relative;
+    bottom: 150px;
+    right: 30px;
+    width:100%;
+    border-radius: 10px;
+
+ }
+
+ div.container-titre{
+    position: relative;
+    right:80px;
+    font-size: 20px;
+    font-weight: 900;
+    margin: auto;
+    width: 930px;
+    word-break: keep-all;
+ }
+
+ div.menu{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 90px;
+    position: relative;
+    top:20px;
+ }
+
+div.menu-item img{
+    object-fit: cover;
+    width: 35px;
+    position: relative;
+    top:10px;
+}
+
+div.menu-item img[alt="icon"]{
+   position: relative;
+   right:70px;
+   bottom:80px;
+}
+
+div.menu-item span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    right:220px;
+    top:5px;
+    text-transform: uppercase;
+
+}
+ 
+div.menu-item input{
+    font-size:20px;
+    padding-left:15px;
+    position: relative;
+    bottom:20px;
+    right: 200px;
+    width: 700px;
+    height: 55px;
+    border-top-left-radius: 30px ;
+    border-bottom-left-radius: 30px ;
+    border: 2px solid #cccccc;
+    box-shadow: inset 0 1px 1px  rgb(219, 215, 215);
+    outline:none;
+}
+
+div.menu-item input:focus{
+   box-shadow: inset 0 0 5px  rgb(219, 215, 215);
+}
+  
+button.send img{
+   position: relative;
+   width: 100%;
+}
+
+div.container-video2{
+   position: relative;
+   top:24px
+}
+
+div.container-media{
+   margin-bottom: 8px;
+   width: 220px;
+
+}
+
+div.container-media video{
+   border-radius: 10px;
+   width: 100%;
+}
+
+div.menu-item img[src="icon/youtube (1).png"]{
+   position: relative;
+   right: 219px;
+   
+}
+
+div.container-button{
+   display: flex;
+   justify-content: space-around;
+   position: relative;
+   right: 45px;
+}
+
+div.button button{
+   font-family: sans-serif;
+   font-size: 15px;
+   font-weight: 600;
+   border-radius: 10px;
+   margin-left:45px;
+   height: 50px;
+   border: none;
+   background-color:#e5e5e5;
+}
+
+div.button button[name="form1"]{
+      font-size:18px;
+      background-color: black;
+      color: white;
+      width:80px;
+
+}
+div.button button[name="form2"]{
+     width: 220px;
+     font-size: 20px;
+     position: relative;
+     right: 30px;
+}
+
+div.button button[name="form3"]{
+   width: 100px;
+   position: relative;
+   right:50px;
+}
+
+div.info{
+   position: relative;
+   top:20px;
+   height: 80px;
+
+}
+
+div.photo{
+
+   width: 52px;
+   height: 52px;
+}
+
+div.photo img{
+   object-fit: cover;
+   border-radius: 50%;
+   width: 100%;
+   height: 100%;
+}
+div.text{
+   position: relative;
+   left: 70px;
+   bottom: 45px;
+   width: 300px;
+}
+
+strong{
+   font-size: 20px;
+}
+
+div.container-down{
+   background-color:#f2f2f2;
+   border-radius: 20px;
+    position: relative;
+    bottom: 40px;
+    width: 1010px;
+    height:150px;
+   
+}
+
+div.container-down .view{
+   font-size: 20px;
+}
+
+ div.comment{
+   display: flex;
+   gap: 20px;
+
+ }
+
+ div.commentaire1{
+   font-size: 30px;
+    font-weight: 900;
+ }
+
+ div.commentaire2{
+      position: relative;
+      bottom: 10px;
+      height: 50px;
+ }
+
+
+div.commentaire2 img{
+   object-fit: contain;
+    width: 100%;
+    height: 100%;
+} 
+
+
+
+div.input-comment input{
+   position: relative;
+   top:40px;
+   font-size: 20px;
+   border: none;
+   border-bottom: 1px solid #ccc;
+   width: 1000px;
+   outline: none;
+}
+
+
+
+form button.button-line{
+     position: relative;
+     height:40px;
+     left:340px;
+     bottom:110px;
+     border: none;
+}
+
+form.form-line{
+     display: flex;
+     position: relative;
+     top: 30px;
+     right: 40px;
+     bottom:10px;
+     width: 800px;
+     gap:100px;
+}
+ 
+.button-line{
+   background-color:#f2f2f2;
+   font-size: 20px;
+   width:10px;
+}
+
+.button-line img{
+   object-fit:contain;
+   width:30px;
+   height:30px;
+}
+
+.button-line img:active{
+   background-color: black;
+}
+
+
+  button[name='button-like']{
+     position: relative;
+     transform: translate(60px);
+     left:50px;
+     width:100px;
+     border-top-left-radius: 30px;
+     border-bottom-left-radius: 30px;
+  }
+
+  button[name='button-dislike']{
+   transform: translate(-40px);  
+   width:100px;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+;
+  }
+
+
+button[name='button-follow']{
+     transform: translate(-20px,-5px);
+     width: 150px;
+     color: white;
+     border-radius:40px;
+     background-color:black;
+   
+}
+
+button[type="submit"]{
+     width:100px;
+     height:56px;
+     border-top-right-radius:30px ;
+     border-bottom-right-radius:30px ;
+     border-right:none;
+     transform: translate(-245px,-2px);
+     border: 1px solid #cccccc;
+   }
+
+   
+button img[src="icon/search.png"]{
+   object-fit: contain;
+   transform: translate(70px,-8px);
+    width:50px;
+}

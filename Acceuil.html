@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portelio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Asap:ital,wght@0,100..900;1,100..900&family=Bangers&family=Caveat:wght@400..700&family=Merienda:wght@300..900&family=Monomakh&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+      html{
+         scroll-behavior: smooth;
+      }
+        
+      body{
+           scroll-behavior: smooth;
+           background-color:white;
+           font-family: 'Asap';
+        }
+
+         .size{
+          font-family: "Merienda", serif;
+         }
+  
+        .anime-pack{
+            animation: fade-in linear forwards;
+            animation-timeline: view();
+            animation-range: entry 20% cover 40%;
+            }
+         
+            .move-back{
+              animation: move 1s linear infinite;
+              background-image: linear-gradient(to right,white , black);
+              background-clip: text;
+              color: transparent;
+            }
+      @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+      @keyframes move {
+          to{
+            background-position: 100rem;
+        }
+      }
+
+      @keyframes action {
+        0%{
+          transform:translate(0,0)
+        }
+        50%{
+          transform: translate(0,20px);
+        }
+
+        100%{
+          transform: translate(0,-20px);
+        }
+      }
+      
+      .apelle{
+        animation: action 3s linear infinite;
+      }
+
+      .background-gradient{
+        background-color: transparent;
+        border: none;
+        box-shadow:0 0 10px rgb(203, 197, 197);
+      }
+
+        button.scroll-down svg{
+          animation: move 0.6s linear infinite;
+        }
+        .row-2{
+          display: flex;
+        }
+    </style>
+  </head>
+   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark  py-4" style="background-color: #26293b;">
+      <div class="container">
+          <a class="navbar-brand fs-3" href="#"><sp class="text-primary" style="font-family: Caveat;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+
+              <defs>
+              
+              <style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.92px;}</style>
+              
+              </defs>
+              
+              <g id="roll_brush" data-name="roll brush">
+              
+              <path class="cls-1" d="M1.45,15.29A11.73,11.73,0,0,1,13.17,3.56a9.38,9.38,0,0,1,9.38,9.38,7.5,7.5,0,0,1-7.5,7.5,6,6,0,0,1-6-6,4.8,4.8,0,0,1,4.8-4.8,3.84,3.84,0,0,1,3.84,3.84,3.07,3.07,0,0,1-3.07,3.07,2.46,2.46,0,0,1-2.46-2.45,2,2,0,0,1,2-2A1.57,1.57,0,0,1,15.7,13.7"/>
+              
+              </g>
+              
+              </svg>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="#fff">
+                <path d="M7 9H17M7 13H17M21 20L17.6757 18.3378C17.4237 18.2118 17.2977 18.1488 17.1656 18.1044C17.0484 18.065 16.9277 18.0365 16.8052 18.0193C16.6672 18 16.5263 18 16.2446 18H6.2C5.07989 18 4.51984 18 4.09202 17.782C3.71569 17.5903 3.40973 17.2843 3.21799 16.908C3 16.4802 3 15.9201 3 14.8V7.2C3 6.07989 3 5.51984 3.21799 5.09202C3.40973 4.71569 3.71569 4.40973 4.09202 4.21799C4.51984 4 5.0799 4 6.2 4H17.8C18.9201 4 19.4802 4 19.908 4.21799C20.2843 4.40973 20.5903 4.71569 20.782 5.09202C21 5.51984 21 6.0799 21 7.2V20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+          </button>
+              <div class="collapse navbar-collapse order-1" id="navbarNav">
+                  <ul class="d-flex justify-content-space-around  size navbar-nav ms-auto fs-6">
+                      <li class="nav-item"><a class="nav-link" href="#Acceuil">Acceuil</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#projet">projets</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#apropos">a propos de moi</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#comptences">Competences</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                  </ul> 
+          </div>
+        </div>
+    </nav>
+    <div class=" container-fluid" style="height: 43rem; background-color:#26293b;" id="Acceuil"> 
+      <div class="d-flex flex-column p-5 justify-content-center align-items-center text-white" style="position: relative; top: 10rem;line-height:90px;">
+          <div class="display-1 text-center  size" style="font-weight:900;">ikoule japhet</div>
+          <p class="fs-3 fs-md-5 text-center">Developpeur&ensp;fullstack j'ecris du code que meme moi je ne comprends pas</p>
+          <div class="d-flex justify-content-center g-3">
+          <button class="btn btn-muted m-2 border-0" style="width: 50px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43px" height="43px" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2"><defs><style>.cls-1{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill-rule:evenodd;}</style></defs><path class="cls-1" d="M24,2.5a21.5,21.5,0,0,0-6.8,41.9c1.08.2,1.47-.46,1.47-1s0-1.86,0-3.65c-6,1.3-7.24-2.88-7.24-2.88A5.7,5.7,0,0,0,9,33.68c-1.95-1.33.15-1.31.15-1.31a4.52,4.52,0,0,1,3.29,2.22c1.92,3.29,5,2.34,6.26,1.79a4.61,4.61,0,0,1,1.37-2.88c-4.78-.54-9.8-2.38-9.8-10.62a8.29,8.29,0,0,1,2.22-5.77,7.68,7.68,0,0,1,.21-5.69s1.8-.58,5.91,2.2a20.46,20.46,0,0,1,10.76,0c4.11-2.78,5.91-2.2,5.91-2.2a7.74,7.74,0,0,1,.21,5.69,8.28,8.28,0,0,1,2.21,5.77c0,8.26-5,10.07-9.81,10.61a5.12,5.12,0,0,1,1.46,4c0,2.87,0,5.19,0,5.9s.39,1.24,1.48,1A21.5,21.5,0,0,0,24,2.5"/></svg></button>
+          <button class="btn btn-muted m-2 border-0" style="width: 50px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43px" height="43px" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" fill="#fff" stroke="#fff">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier">
+            
+            <defs>
+            
+            <style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}</style>
+            
+            </defs>
+            
+            <path class="cls-1" d="M38.74,16.55v1c0,10.07-7.64,21.61-21.62,21.61A21.14,21.14,0,0,1,5.5,35.71a12.22,12.22,0,0,0,1.81.11,15.25,15.25,0,0,0,9.44-3.24,7.56,7.56,0,0,1-7.1-5.29,6.9,6.9,0,0,0,1.44.15,7.53,7.53,0,0,0,2-.27A7.57,7.57,0,0,1,7,19.72v-.1a7.42,7.42,0,0,0,3.44.94A7.54,7.54,0,0,1,8.05,10.5a21.58,21.58,0,0,0,15.68,7.94,6.38,6.38,0,0,1-.21-1.74,7.55,7.55,0,0,1,13.17-5.31,15.59,15.59,0,0,0,4.83-1.85,7.65,7.65,0,0,1-3.39,4.27,15.87,15.87,0,0,0,4.37-1.26,15.56,15.56,0,0,1-3.76,4Z"/>
+            
+            </g>
+            
+            </svg></button>
+
+          </div>
+        </div>  
+    </div>
+    <script>
+      particlesJS("Acceuil", {
+          particles: {
+              number: { value: 200 },
+              shape: { type: "circle" },
+              size: { value: 3 },
+              move: { speed: 2 },
+              line_linked: { enable: true, distance: 150, color: "#ffffff" }
+          }
+      });
+  </script>
+  </header>
+   <main>
+    <div class="container mt-5 g-5" id="projet">
+        <div class=" d-flex flex-lg-row flex-column">
+        <div class="text-center mt-5">
+            <h1 class="size" style="text-transform: uppercase; color:#26293b; font-weight: 900;">mes projets Encours</h1>
+            <p class="fs-5 size ">je sais que t'es presse mais tu ne les auras pas maintenant</p>
+            <button class="btn"><a href="#apropos">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" width="40px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#000000;}
+              </style>
+              <g>
+                <path class="st0" d="M256,0C114.613,0,0,114.613,0,256s114.613,256,256,256s256-114.613,256-256S397.387,0,256,0z M375.451,262.298   L259.395,384.29c-0.887,0.927-2.113,1.452-3.395,1.452c-1.282,0-2.508-0.524-3.395-1.452L136.54,262.298   c-11.226-11.791-10.766-30.436,1.032-41.654c11.79-11.218,30.452-10.75,41.653,1.032l47.306,49.726V153.605   c0-16.282,13.186-29.468,29.468-29.468c16.282,0,29.46,13.186,29.46,29.468v117.798l47.314-49.726   c11.193-11.782,29.863-12.25,41.645-1.032C386.217,231.862,386.686,250.508,375.451,262.298z"/>
+              </g>
+              </svg></a></button>
+        </div>
+        <div class="row g-3 mt-5 ms-lg-5 size">
+            <div class="col-sm-6 col-md-6 col-lg-5 d-flex align-items-stretch position-relative">
+                 <div class="card w-100">
+                <video src="site.mp4" type="video" class="card-img-top" autoplay loop muted></video>
+                <div class="card-body">
+                  <h5 class="card-title " style="font-family: 'Asap';">manga art</h5>
+                  <p class="card-text">un  projet de sitee d'anime en html css qui devrait permettre a chacun de trouver son anime prefere il pas fini mais j'y travaille</p>
+                </div>
+                <div class="card-footer text-start bg-transparent border-0 position-relative">
+                   <button type="button" class="btn btn-muted border-dark" style="letter-spacing:2;">code source</button>
+                   <a href="" class="btn btn-primary rounded-3" data-bs-toggle="collapse" data-bs-target="#feat" style="background-color: #26293b">features</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-5 d-flex align-items-stretch">
+              <div class="card w-100">
+                <video src="img/blender.mp4" type="video" class="card-img-top" autoplay loop muted></video>
+                <div class="card-body">
+                  <h5 class="card-title">blender project</h5>
+                  <p class="card-text">Un texte encore plus long pour voir comment ça s'adapte.</p>
+                </div>
+                <div class="card-footer text-start bg-transparent border-0 position-relative">
+                  <button type="button" class="btn btn-muted border-dark" style="letter-spacing:2;">code source</button>
+                  <a href="" class="btn btn-primary rounded-3" data-bs-toggle="collapse" data-bs-target="#feature" style="background-color: #26293b">features</a>
+               </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-5 d-flex align-items-stretch">
+                <div class="card w-100">
+                    <video src="img/site de fond .mp4" type="video" class="card-img-top" autoplay loop muted></video>
+                    <div class="card-body">
+                        <h5 class="card-title">Galerie anime</h5>
+                        <p class="card-text">Un texte encore plus long pour voir comment ça s'adapte.</p>
+                    </div>
+                    <div class="card-footer text-start bg-transparent border-0 position-relative">
+                      <button type="button" class="btn btn-muted border-dark" style="letter-spacing:2;">code source</button>
+                      <a href="" class="btn btn-primary rounded-3" data-bs-toggle="collapse" data-bs-target="#demo" style="background-color: #26293b">features</a>
+                   </div>
+                </div>    
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-5 d-flex align-items-stretch"> <div class="card w-100">
+                <video src="img/space.mp4" type="video" class="card-img-top" autoplay loop muted></video>
+                <div class="card-body">
+                  <h5 class="card-title">space mountain</h5>
+                  <p class="card-text">pres a visite a visite la lune</p>
+                </div>
+                <div class="card-footer text-start bg-transparent border-0 position-relative">
+                  <button type="button" class="btn btn-muted border-dark" style="letter-spacing:2;">code source</button>
+                  <a href="" class="btn btn-primary rounded-3" data-bs-toggle="collapse" data-bs-target="#demo" style="background-color: #26293b">features</a>
+               </div>
+              </div>
+            </div>
+        </div>
+        </div>
+       </div>
+        </div>
+         <div class="container"></div>
+        <div class="container" id="apropos" style="position: relative; top:150px;">
+            <div class="row d-flex flex-row flex-md-row mt-auto anime-pack  start-0">
+                <div class="col-lg-4 col-sm-9 col-md-6">
+                  <img src="img/moi.jpg" class="img-fluid mx-sm-auto d-block" alt="photo-de-moi" style="filter:grayscale(50);">
+                </div>
+                <div class="col-lg-6 ms-lg-5 size" style="padding: 20px;">
+                     <h1 class="text-uppercase" style="color:#26293b; font-weight: 900;letter-spacing: 10px;">A propos de moi</h1>
+                     <p style="color:#26293b;line-height: 45px;">
+                      Un jour de saison sèche naquis moi, votre serviteur.
+                      Sous un soleil implacable, où la terre craquelée portait les stigmates du temps, j’ai poussé mon premier cri. L’air était lourd, chargé de promesses invisibles, et déjà le monde s’ouvrait devant moi, vaste et indéchiffrable.
+                      
+                      Enfant curieux, j'observais les ombres danser sur les murs, les étoiles chuchoter des secrets que seuls les rêveurs pouvaient comprendre. Puis, un jour, une autre lumière s’est allumée : celle d’un écran, d’un monde où les limites semblaient disparaître sous la puissance du code.
+                      
+                      J’ai découvert la programmation comme on découvre un langage oublié, une magie moderne tissée de logique et de créativité. Chaque ligne de code était une note, chaque programme une mélodie. Pas à pas, je me suis aventuré dans cet univers où les idées prennent forme, où l’abstrait devient tangible.</p>
+                      <a href="cv/CV IKOULE.pdf" download class="apelle btn btn-dark w-sm-100 background-gradient text-dark">telecharge cv</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container" style="position: relative; top:300px;">
+          <h1 class="size text-center text-uppercase" id="comptences" style="letter-spacing: 10px;color:#26293b;font-weight: 900;"><span class="anime">C</span>ompetences</h1>
+          <div class="d-flex flex-column border-dark justify-content-center align-items-center g-3 p-3" style="transform: translate(0,40px);">
+            <span class="h1">fronted</span>
+            <div class="d-flex justify-content-center" style="width:100%; height: 100px;">
+              <button class="btn border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px" viewBox="-1 0 20 20" version="1.1">
+                  <title>html [#124]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Dribbble-Light-Preview" transform="translate(-61.000000, -7639.000000)" fill="#000000">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                              <path d="M19.4350881,7485 L19.4279481,7485 L10.8119794,7485 L11.0180201,7487 L19.2300674,7487 C19.109707,7488.752 18.7455658,7492.464 18.6119454,7494.153 L13.99949,7495.451 L13.99949,7495.455 L13.98929,7495.46 L9.37377458,7493.836 L9.05757353,7490 L11.3199411,7490 L11.4800816,7492.063 L13.99337,7493 L13.99949,7493 L16.5086984,7492.1 L16.7667592,7489 L8.95659319,7489 C8.91885306,7488.599 8.43333144,7483.392 8.34867116,7483 L19.6370488,7483 C19.5738086,7483.66 19.5095484,7484.338 19.4350881,7485 L19.4350881,7485 Z M5,7479 L6.63812546,7497.148 L13.98929,7499 L21.3598345,7497.111 L23,7479 L5,7479 Z" id="html-[#124]">
+                                
+                              </path>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+              </button>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" width="60px" height="60px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                <g id="c133de6af664cd4f011a55de6b001b19">
+                 <path display="inline" d="M483.111,0.501l-42.59,461.314l-184.524,49.684L71.47,461.815L28.889,0.501H483.111z M397.29,94.302   H255.831H111.866l6.885,55.708h137.08h7.7l-7.7,3.205l-132.07,55.006l4.38,54.453l127.69,0.414l68.438,0.217l-4.381,72.606   l-64.058,18.035v-0.057l-0.525,0.146l-61.864-15.617l-3.754-45.07h-0.205H132.1h-0.202l7.511,87.007l116.423,34.429v-0.062   l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z">   
+                </path>
+                </g>
+                </svg>
+              </button>
+              <button class="btn border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 16 16" fill="none">
+                <path fill-rule="nonzero" clip-rule="nonzero" d="M7.58638 0.102166C7.8199 -0.0340553 8.10867 -0.0340553 8.34219 0.102166L14.5565 3.72717C14.7869 3.86157 14.9286 4.10825 14.9286 4.375V11.625C14.9286 11.8918 14.7869 12.1384 14.5565 12.2728L8.34219 15.8978C8.10867 16.0341 7.8199 16.0341 7.58638 15.8978L6.03281 14.9916C5.67502 14.7829 5.55417 14.3236 5.76288 13.9658C5.97159 13.6081 6.43083 13.4872 6.78862 13.6959L7.96429 14.3817L13.4286 11.1942V4.80578L7.96429 1.61828L2.5 4.80578V11.1942L3.6168 11.8457C3.96098 11.9561 4.38611 11.9831 4.68576 11.8507C4.82477 11.7893 4.95031 11.6893 5.04968 11.5107C5.15426 11.3227 5.25 11.0098 5.25 10.5V5.25C5.25 4.83579 5.58579 4.5 6 4.5C6.41421 4.5 6.75 4.83579 6.75 5.25V10.5C6.75 11.1902 6.62104 11.7716 6.36047 12.2399C6.09471 12.7176 5.71466 13.036 5.29192 13.2228C4.48562 13.579 3.59523 13.433 3.04999 13.2371C3.00686 13.2216 2.96525 13.2022 2.92567 13.1791L1.3721 12.2728C1.14168 12.1384 1 11.8918 1 11.625V4.375C1 4.10825 1.14168 3.86157 1.3721 3.72717L7.58638 0.102166ZM8.24655 5.28323C8.64339 4.81081 9.26318 4.5 10.1042 4.5C10.8847 4.5 11.4792 4.76756 11.8815 5.19314C12.166 5.49417 12.1527 5.96885 11.8516 6.25338C11.5506 6.53792 11.0759 6.52455 10.7914 6.22352C10.7038 6.13087 10.5202 6 10.1042 6C9.66182 6 9.47952 6.14753 9.39511 6.24802C9.28615 6.37774 9.25 6.54184 9.25 6.625C9.25 6.70816 9.28615 6.87226 9.39511 7.00198C9.47952 7.10247 9.66182 7.25 10.1042 7.25C10.1782 7.25 10.2497 7.26073 10.3173 7.28072C10.9368 7.37001 11.4089 7.64784 11.7326 8.03323C12.1049 8.47643 12.2292 8.99983 12.2292 9.375C12.2292 9.75017 12.1049 10.2736 11.7326 10.7168C11.3358 11.1892 10.716 11.5 9.87501 11.5C9.0945 11.5 8.49996 11.2324 8.09768 10.8069C7.81315 10.5058 7.82652 10.0311 8.12755 9.74662C8.42857 9.46208 8.90325 9.47546 9.18779 9.77648C9.27536 9.86913 9.459 10 9.87501 10C10.3174 10 10.4997 9.85247 10.5841 9.75198C10.693 9.62226 10.7292 9.45816 10.7292 9.375C10.7292 9.29184 10.693 9.12774 10.5841 8.99802C10.4997 8.89753 10.3174 8.75 9.87501 8.75C9.80097 8.75 9.72943 8.73927 9.66188 8.71928C9.04237 8.62999 8.57028 8.35216 8.24655 7.96677C7.87427 7.52357 7.75 7.00017 7.75 6.625C7.75 6.24983 7.87427 5.72643 8.24655 5.28323Z" fill="#000000"/>
+                </svg>
+              </button>
+            </div>
+            <span class="h1 text-uppercase" style="position: relative; top:3.7rem;">backend</span>
+            <div class="d-flex align-items-center border-dark rounded-4" style="margin: 40px; width:50%; height: 100px;">
+               <button class="btn border-0 mx-auto d-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 16 16" fill="none">
+                <path fill-rule="nonzero" clip-rule="nonzero" d="M7.58638 0.102166C7.8199 -0.0340553 8.10867 -0.0340553 8.34219 0.102166L14.5565 3.72717C14.7869 3.86157 14.9286 4.10825 14.9286 4.375V11.625C14.9286 11.8918 14.7869 12.1384 14.5565 12.2728L8.34219 15.8978C8.10867 16.0341 7.8199 16.0341 7.58638 15.8978L6.03281 14.9916C5.67502 14.7829 5.55417 14.3236 5.76288 13.9658C5.97159 13.6081 6.43083 13.4872 6.78862 13.6959L7.96429 14.3817L13.4286 11.1942V4.80578L7.96429 1.61828L2.5 4.80578V11.1942L3.6168 11.8457C3.96098 11.9561 4.38611 11.9831 4.68576 11.8507C4.82477 11.7893 4.95031 11.6893 5.04968 11.5107C5.15426 11.3227 5.25 11.0098 5.25 10.5V5.25C5.25 4.83579 5.58579 4.5 6 4.5C6.41421 4.5 6.75 4.83579 6.75 5.25V10.5C6.75 11.1902 6.62104 11.7716 6.36047 12.2399C6.09471 12.7176 5.71466 13.036 5.29192 13.2228C4.48562 13.579 3.59523 13.433 3.04999 13.2371C3.00686 13.2216 2.96525 13.2022 2.92567 13.1791L1.3721 12.2728C1.14168 12.1384 1 11.8918 1 11.625V4.375C1 4.10825 1.14168 3.86157 1.3721 3.72717L7.58638 0.102166ZM8.24655 5.28323C8.64339 4.81081 9.26318 4.5 10.1042 4.5C10.8847 4.5 11.4792 4.76756 11.8815 5.19314C12.166 5.49417 12.1527 5.96885 11.8516 6.25338C11.5506 6.53792 11.0759 6.52455 10.7914 6.22352C10.7038 6.13087 10.5202 6 10.1042 6C9.66182 6 9.47952 6.14753 9.39511 6.24802C9.28615 6.37774 9.25 6.54184 9.25 6.625C9.25 6.70816 9.28615 6.87226 9.39511 7.00198C9.47952 7.10247 9.66182 7.25 10.1042 7.25C10.1782 7.25 10.2497 7.26073 10.3173 7.28072C10.9368 7.37001 11.4089 7.64784 11.7326 8.03323C12.1049 8.47643 12.2292 8.99983 12.2292 9.375C12.2292 9.75017 12.1049 10.2736 11.7326 10.7168C11.3358 11.1892 10.716 11.5 9.87501 11.5C9.0945 11.5 8.49996 11.2324 8.09768 10.8069C7.81315 10.5058 7.82652 10.0311 8.12755 9.74662C8.42857 9.46208 8.90325 9.47546 9.18779 9.77648C9.27536 9.86913 9.459 10 9.87501 10C10.3174 10 10.4997 9.85247 10.5841 9.75198C10.693 9.62226 10.7292 9.45816 10.7292 9.375C10.7292 9.29184 10.693 9.12774 10.5841 8.99802C10.4997 8.89753 10.3174 8.75 9.87501 8.75C9.80097 8.75 9.72943 8.73927 9.66188 8.71928C9.04237 8.62999 8.57028 8.35216 8.24655 7.96677C7.87427 7.52357 7.75 7.00017 7.75 6.625C7.75 6.24983 7.87427 5.72643 8.24655 5.28323Z" fill="#000000"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex align-items-center" id="contact" style="position: relative; top:30rem; height:45rem; background-image: url(img/cool-background.png);background-size: cover; background-repeat: no-repeat;">
+        <div class="container bg-white rounded-2">
+          <div class="row d-flex justify-content-center align-items-center row-cols-1 row-cols-lg-2 row-cols-sm-1 row-cols-md-1 row-cols-xs-1">
+          <div class="col">
+           <p class=" size  mx-sm-auto d-block fs-1 bg-white" style="color: #26293b;">
+            Si ta envie de contacte sa seigneurie fait toi plaisir mon brave
+          </p>
+        </div>
+        <div class="col">
+         <h1 class="text-whtext-center">contacte-moi </h1>
+          <form action="/action_page.php" class="bg-white w-100 w-md-100 w-sm-100 mt-5 rounded-3" style="width: 40rem;">
+            <div class="row">
+           <div class="col mb-auto ms-2">
+            <input type="text" class="form-control rounded-3" nom="nom" placeholder="nom" required>
+            <input type="email" class="form-control mt-5" placeholder="Email" required>
+           </div>
+          <div class="col mb-5 ms-2">
+            <textarea name="text"  class="form-control  rounded-3" id="commentaire" cols="30" rows="10" placeholder="message"></textarea>
+          </div>
+        </div>
+          <button type="submit" class="btn btn-primary ms-2 mb-5 w-50 rounded-3" style="background-color: #26293b;">Envoyer</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer class="bg-dark text-white text-center text-lg-start mt-5" style="transform: translate(0,50rem); height: 15rem;">
+      <div class="container d-flex flex-column justify-content-center align-items-center p-4">
+            <div class="fs-3 size">ikoule japhet</div>
+            <div class="">
+              <a href="" class="btn border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 20 20" version="1.1">
+    
+                <title>github [#142]</title>
+                <desc>Created with Sketch.</desc>
+                <defs>
+            
+            </defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]">
+            
+            </path>
+                        </g>
+                    </g>
+                </g>
+            </svg></a>
+              <a href="" class="btn border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2" fill="#ebe5e5" stroke="#ebe5e5">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier">
+                
+                <defs>
+                
+                <style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}</style>
+                
+                </defs>
+                
+                <path class="cls-1" d="M38.74,16.55v1c0,10.07-7.64,21.61-21.62,21.61A21.14,21.14,0,0,1,5.5,35.71a12.22,12.22,0,0,0,1.81.11,15.25,15.25,0,0,0,9.44-3.24,7.56,7.56,0,0,1-7.1-5.29,6.9,6.9,0,0,0,1.44.15,7.53,7.53,0,0,0,2-.27A7.57,7.57,0,0,1,7,19.72v-.1a7.42,7.42,0,0,0,3.44.94A7.54,7.54,0,0,1,8.05,10.5a21.58,21.58,0,0,0,15.68,7.94,6.38,6.38,0,0,1-.21-1.74,7.55,7.55,0,0,1,13.17-5.31,15.59,15.59,0,0,0,4.83-1.85,7.65,7.65,0,0,1-3.39,4.27,15.87,15.87,0,0,0,4.37-1.26,15.56,15.56,0,0,1-3.76,4Z"/>
+                
+                </g>
+                
+                </svg>
+              </a>
+            </div>
+      </div>
+     </footer>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     </body>
+    </html>
